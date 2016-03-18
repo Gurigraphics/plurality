@@ -12,7 +12,7 @@ Concept art images:
 
 http://i.imgur.com/lHjf3yd.png
 
-http://i.imgur.com/iLEw7o9.png
+http://i.imgur.com/xxpIzlq.png
 
 http://i.imgur.com/ymSjOFy.png
 
