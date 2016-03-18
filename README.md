@@ -37,11 +37,13 @@ http://i.imgur.com/r8tye1k.png
 
 ### Simple examples:
 
+https://dl.dropboxusercontent.com/u/35815394/2015/plurality/index.html
+
 https://dl.dropboxusercontent.com/u/35815394/2015/plurality/plurality.html
 
 https://dl.dropboxusercontent.com/u/35815394/2015/plurality/example.html
 
-https://dl.dropboxusercontent.com/u/35815394/2015/plurality/index.html
+
 
 
 
