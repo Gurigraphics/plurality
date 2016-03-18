@@ -1,0 +1,383 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>jQuery UI Sortable - Default functionality</title>
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/dark-hive/jquery-ui.css">
+  <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+  <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.2.3/ace.js" type="text/javascript" charset="utf-8"></script>
+  
+ 
+    
+  <style>
+  #sortable { list-style-type: none; margin: 0; padding: 0; width: 60%;  }
+  #sortable li { margin: 0 3px 3px 3px; padding: 0.4em; padding-left: 1.5em; font-size: 1.4em; height: 18px; }
+  #sortable li span { position: absolute; margin-left: -1.3em; }
+  #sortable div { background-color: #414241; border-color: #000000; border-style: solid; border-width: 1px; margin: 1px; }
+  #sortable textarea { max-width: 400px; min-width: 400px; min-height: 100px;  }
+
+  #dialogs {  width: 500px; height: 500px; }
+
+  #sortable2 { list-style-type: none; margin: 0; padding: 0; width: 60%;  }
+  #sortable2 li { margin: 0 3px 3px 3px; padding: 0.4em; padding-left: 1.5em; font-size: 1.4em; height: 18px; }
+  #sortable2 li span { position: absolute; margin-left: -1.3em; }
+  #sortable2 div { background-color: #414241; border-color: #000000; border-style: solid; border-width: 1px; margin: 1px; }
+  #sortable2 textarea { max-width: 400px; min-width: 400px; min-height: 150px;  }
+  footer { min-height: 40px;font-family: Verdana,Arial,sans-serif;
+  font-size: 1em;
+  text-align: center;
+  padding-top: 5px;
+  color: #ffffff;}  
+
+  .e{position: absolute;top:0;right:0;bottom:0;left:0;  margin: auto;  overflow: hidden !important; }}
+  .e2{position: absolute;top:0;right:0;bottom:0;left:0;max-width: 400px; min-width: 100px; min-height: 100px;  height: 100px; margin-left: 100px; margin-top: 220px; background-color: #272822;}
+  #bg {background-color: #272822; margin: auto; }
+
+  #tabs-2{ margin: auto; height: 800px }
+  #tabs-3{ margin: auto; height: 800px }
+  #tabs-4{ margin: auto; height: 800px }
+  #tabs-5{ margin: auto; height: 800px }
+  #tabs-6{ margin: auto; height: 800px }
+  #tabs-7{ margin: auto; height: 800px }
+  #tabs-8{ margin: auto; height: 800px }
+  #tabs-9{ margin: auto; height: 2000px }
+  #plurality{ margin: auto; width: 700px }
+
+body {
+background: #7d7e7d; /* Old browsers */
+background: -moz-linear-gradient(top, #7d7e7d 0%, #0e0e0e 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, #7d7e7d 0%,#0e0e0e 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, #7d7e7d 0%,#0e0e0e 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7d7e7d', endColorstr='#0e0e0e',GradientType=0 ); /* IE6-9 */
+
+
+ background-repeat: repeat-x;
+ 
+ margin-top: 0px;
+ margin-bottom: 0px;
+ margin: 0;
+
+
+
+  z-index: -1}
+
+  #logo { position: relative; z-index: 2; margin-right: auto; margin-left: auto; height:90%; margin-bottom: 2px; margin-top: 0px;}
+  #logo2 {  margin-right: auto; margin-left: auto; }
+
+#bar {margin: auto; 
+
+background: #7d7e7d; /* Old browsers */
+background: -moz-linear-gradient(top,  #7d7e7d 0%, #0e0e0e 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  #7d7e7d 0%,#0e0e0e 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  #7d7e7d 0%,#0e0e0e 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7d7e7d', endColorstr='#0e0e0e',GradientType=0 ); /* IE6-9 */
+
+font-family: Verdana,Arial,sans-serif;
+  font-size: 1em;
+  text-align: center;
+  padding-top: 5px;
+  color: #ffffff;
+
+-webkit-border-radius: 10px;
+-moz-border-radius: 10px;
+border-radius: 10px;
+margin-top: 0px;
+height: 50px;
+}
+
+  </style>
+ <script>
+
+  $(function() {
+
+      
+
+    $( "#tabs" ).tabs();
+
+$( "#sortable" ).sortable({
+      stop: function( event, ui ) {change(); }
+}); 
+
+
+
+  
+$("#sortable textarea").on('change keyup paste', change);
+
+
+    function change(){
+
+           
+             var content = "";
+
+             $("#5 textarea").empty();
+             $("#sortable" ).sortable('toArray', {attribute: 'value'});           
+
+            $("div textarea").each(function(){
+              content+=this.value;
+            });  
+     
+
+             $("#5 textarea").text(content); 
+
+    }
+
+
+$( "#targets" ).click(function() {
+
+        $( "#sortable" ).append( "<div><span class='ui-icon ui-icon-arrow-4-diag'></span><textarea rows='4' cols='50'></textarea></div>" );
+         setTimeout(change, 1000);  
+         $("#sortable textarea").on('change keyup paste', change);
+ 
+    });
+
+$( "#show" ).click(function() {
+
+        $( "#1 textarea" ).show();
+
+        
+ 
+});
+$( "#hide" ).click(function() {
+
+        $( "#1 textarea" ).hide();
+ 
+});
+
+$( "#88" ).draggable();
+    
+
+
+
+$( "#dialogs" ).resizable({
+  resize:  function( event, ui ) { editor.resize();}
+});
+
+
+$( "#dialogs" ).on( "resize", function( event, ui ) {editor.resize();} );
+
+
+$( "#bg" ).click(function() {
+  editor.resize();
+});
+
+$( "#dialogs" ).resize(function() {
+  editor.resize();
+});
+
+
+$( "#dialogs" ).dialog({
+      autoOpen: false,
+      show: {
+        effect: "blind",
+        duration: 1000
+      },
+      hide: {
+        effect: "explode",
+        duration: 1000
+      }
+    });
+
+ 
+    $( "#opener" ).click(function() {
+      $( "#dialogs" ).dialog( "open" );
+    });
+ 
+
+$( "#progressbar" ).progressbar({
+      value: 100
+    });
+
+
+
+
+});
+
+
+
+
+
+
+
+  </script>
+</head>
+<body>
+
+    <center>
+      
+<div id="bar">  
+<img id= "logo" src="logo.png" alt="plurality"> 
+
+
+</div>
+     
+<div id="tabs" > 
+     <ul>
+    <li><a href="#tabs-1">Editor</a></li>
+    <li><a href="#tabs-2">Tutorials</a></li>
+    <li><a href="#tabs-3">Articles</a></li>
+    <li><a href="#tabs-4">Videos</a></li>
+    <li><a href="#tabs-5">Courses</a></li>
+    <li><a href="#tabs-6">Community</a></li>
+    <li><a href="#tabs-7">Store</a></li>
+    <li><a href="#tabs-8">Docs</a></li>
+    <li><a href="#tabs-9">About</a></li>
+  </ul>
+  <div id="tabs-1">
+<ul id="sortable">
+
+<div id="1" value="1">
+    <span class="ui-icon ui-icon-arrow-4-diag"></span>    
+<textarea rows="4" cols="50"><!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+</head>
+<body>
+</textarea> 
+    <div>
+    <button id="show">Show code</button>
+    <button id="hide">Hide code</button>
+    <button id="opener">Open editor</button>
+    </div>  
+    <div id="dialogs" title="Basic Editor">
+
+       <div id="bg">545454
+        <div class="e" id="editor">
+       </div>
+   
+  </div>
+
+
+</div> 
+</div>
+
+
+
+
+<div id="2" value="2">
+    <span class="ui-icon ui-icon-arrow-4-diag"></span>
+    <textarea rows="4" cols="50"><div id="1"></div>
+    </textarea>
+</div>
+<div id="3" value="3">
+    <span class="ui-icon ui-icon-arrow-4-diag"></span>
+    <textarea rows="4" cols="50"><div id="2"></div>
+</textarea>
+</div>
+<div id="4" value="4">
+    <span class="ui-icon ui-icon-arrow-4-diag"></span>
+    <textarea rows="4" cols="50">
+</body>
+</html>
+</textarea>
+</div>
+
+</ul>
+
+<button id="targets">New</button>
+
+<ul id="sortable2">
+<div id="5" value="5">
+    <textarea rows="4" cols="50">    
+    </textarea>
+</div>
+</ul>
+
+</div>
+  <div id="tabs-2">
+ </div>
+ <div id="tabs-3">
+ </div>
+ <div id="tabs-4">
+ </div>
+ <div id="tabs-5">
+ </div>
+ <div id="tabs-6">
+ </div>
+ <div id="tabs-7">
+ </div>
+ <div id="tabs-8">
+ </div>
+  <div id="tabs-9">
+</br></br>
+<h1>Plurality</h1>
+<img id= "logo2" src="logo.png" alt="plurality"> 
+<p>Developing games is developing yourself.</p>
+<div id="plurality">
+</br></br></br>
+Powerful Transmedia Editor for Musicians, Programmers, Game Developers, Screenwriters and Storytellers. 
+</br>
+</br></br>
+<b><h2>About</h2></b> 
+<p>Plurality is a software that combines Music Editor, Code editor, Story Editor, Game Engine and Project Management. All in one place.</p>
+<p>Plurality adapts to your project, team and workflow. All that is related to your project is visible and updated in real time. No need to configure anything, and everyone receives the information instantly.</p>
+<p>Plurality is perfectly synchronized with all your devices, wherever you are.</p>
+</br>
+<b><h2>Develop now is a game</h2></b>
+
+<p>Plurality will not drown you in resources that you do not use. </br>To activate Tools Extras you need conquest them.</p>
+<p>In the tutorials the users learn to develop their own code blocks to create your own Engines. The higher the user level, the more resources are at your disposal. This is gamification dev</p>
+</br>
+</br>
+<b><h2>Possibles Modules</h2></b>
+
+<li>Code Editor</li>
+<li>Text Editor</li>
+<li>Task List</li>
+<li>Project Management</li>
+<li>Game Design Management</li>
+<li>Level Design Management</li>
+<li>Story Design Management</li>
+<li>Sound Design Management</li>
+<li>Video Design Management</li>
+<li>Animation Design Management</li>
+<li>Web Design Management</li>
+<li>Marketing Design Management</li>
+</br>
+</br>
+<b><h2>Others</h2></b>
+
+<li>Tutoriais</li>
+<li>Articles</li>
+<li>Courses</li>
+<li>Comunnity</li>
+<li>Store</li>
+<li>Docs</li>
+<li>About</li>
+</br>
+<h2>Plurality</h2>
+
+<p>You and your team needs more organization, knowledge and power?</p>
+<p>We did the Plurality for you. By developers to developers.</p>
+
+
+</div>
+</div>
+
+
+
+
+</div> 
+
+</center>
+<div id="bar">  
+
+
+
+</div>
+ <footer>Plurality © 2016</footer>
+ 
+  <script>
+    var editor = ace.edit("editor");
+    editor.setTheme("ace/theme/monokai");
+    editor.getSession().setMode("ace/mode/javascript"); 
+
+    editor.renderer.scrollBarV.getWidth = function() {return 500}; 
+editor.resize(true);
+</script>
+ 
+</body>
+</html>
