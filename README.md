@@ -21,7 +21,8 @@ The "button matrix" displays "all blocks" of this module.
 
 Concept art image:
 
-http://imgur.com/nTgrgAF.png
+
+![alt tag](http://imgur.com/nTgrgAF.png)
 
 
 ### The blocks tab
@@ -49,7 +50,8 @@ For example: "click_button_start", "click_button_credits", etc.
 
 Concept art image:
 
-http://imgur.com/f5g7Nv0.png
+
+![alt tag](http://imgur.com/f5g7Nv0.png)
 
 
 The code tab
@@ -65,7 +67,7 @@ The code tab
 
 Concept art image:
 
-http://imgur.com/IDYbdV3.png
+![alt tag](http://imgur.com/IDYbdV3.png)
 
 
 The matrix tab
@@ -88,12 +90,14 @@ The matrix tab
 
 ## Comments:
 
-### The first stage of this project is the construction of this modular code editor.
+### The first stage of this project is 
+the construction of this modular code editor.
 
 The program will be written in PHP, HTML and Javascript. Using Twitter bootstrap to layout and Json to data base arrays.
 
 
-### The second stage of this project is to make this editor a Game Engine.
+### The second stage of this project is 
+to make this editor a Game Engine.
 
 The Google Chrome Engine will be used as the "Browser" and "Server" built into the program.
 
@@ -102,7 +106,8 @@ The program will be able to of creating, copying and editing files with PHP and 
 You will can choose and use different game frameworks: Phaser, Pixi.js, Cocos2d, SDL, XNA, etc. And create projects based on these frameworks. And also create blocks to speed and organize the development.
 
 
-### The third stage of this project is to make this Game Engine a Engine Multi-language.
+### The third stage of this project is 
+to make this Game Engine a Engine Multi-language.
 
 The idea is to write block codes with javascript and when export you can choose which framework to export.
 
@@ -124,19 +129,25 @@ Then, if there are both Android compatible blocks or other frameworks, you can e
 
 This multi-language system is better than cross-platform. Because you are not restricted to a single framework or language. You can choose the best framework according to the requirements of each game.
 
-### The fourth stage of this project is make this programm also an editor of scripts and narratives using the same system of arrays to organize the information and chapters of the story.
+### The fourth stage of this project is 
+make this programm also an editor of scripts and narratives using the same system of arrays to organize the information and chapters of the story.
 
-### The fifth stage of this project is make this programm also an editor of music or music tracker, also using the same system of arrays to organize the blocks of information.
+### The fifth stage of this project 
+is make this programm also an editor of music or music tracker, also using the same system of arrays to organize the blocks of information.
 
 ### The sixth stage of this project is make this program an image and animation editor, for pixel art and svg, also using the same system of arrays to organize the blocks of information.
 
-### The seventh stage of this project is insert in this program a lighting and particles editor.
+### The seventh stage of this project is 
+insert in this program a lighting and particles editor.
 
-### The eighth stage is to insert a Tile Editor.
+### The eighth stage is 
+to insert a Tile Editor.
 
-### The ninth stage is to insert a management project, task and version.
+### The ninth stage is 
+to insert a management project, task and version.
 
-### The tenth stage is to include a chat, realtime file sharing, save files in the cloud, a forum and a virtual store to share and sell templates, blocks and plugins.
+### The tenth stage is 
+to include a chat, realtime file sharing, save files in the cloud, a forum and a virtual store to share and sell templates, blocks and plugins.
 
 
 ## This is Plurality!
