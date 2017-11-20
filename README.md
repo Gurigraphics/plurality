@@ -19,8 +19,6 @@ Plurality replaces **static hierarchical tree** by **dropable blocks tree**.
 
 - Best to organize the code.
 - Best to refactor the project.
-- Lightning maintenance.
-- Best for creating complex applications.
 
 > *Ordinary files* are now *Special components*.
 
@@ -28,17 +26,20 @@ Plurality replaces **static hierarchical tree** by **dropable blocks tree**.
 
 Organize the code the way you think.
 
-![alt tag](https://imgur.com/T0PQ0F6.png)
-
 - **CHART** Keep the *essentials*.
 - **DRAFT** Organize the *necessary*.
 - **TRASH** Delete the *unnecessary*.
+
+![alt tag](https://imgur.com/T0PQ0F6.png)
+
 
 ### Benefits
 
 - Best to modular design think.
 - Best to avoid spaghetti code.
 - Best to reuse and share code.
+- Lightning maintenance.
+- Best for creating complex applications.
 
 ### 3- Import and Export code? We can do better with something like **c/c++ pointers**!
 
