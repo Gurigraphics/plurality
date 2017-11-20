@@ -88,6 +88,16 @@ Or use the command prompt:
 npm start 
 ```
 
+## Structure of files
+
+![alt tag](https://imgur.com/6t3WxvO.png)
+
+
+## Structure of a project
+
+![alt tag](https://imgur.com/M4e7vyr.png)
+
+
 ## License
 Copyright 2017 Gurigraphics and various contributors. Released under the [MIT License (MIT)](https://github.com/Gurigraphics/plurality/blob/master/LICENSE)
 
