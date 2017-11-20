@@ -4,7 +4,7 @@
 
 Plurality is an out of the box **Code Editor** for the next generation.
 
-It uses Electrom and CodeMirror to provide a singular coding experience.
+> The singular coding experience starts now.
 
 
 ## What's new?
@@ -26,9 +26,9 @@ Plurality replaces **static hierarchical tree** by **dropable blocks tree**.
 
 Organize the code the way you think.
 
-- **CHART** Keep the *essentials*.
-- **DRAFT** Organize the *necessary*.
-- **TRASH** Delete the *unnecessary*.
+**CHART**: Keep the *essentials*.
+**DRAFT**: Organize the *necessary*.
+**TRASH**: Delete the *unnecessary*.
 
 ![alt tag](https://imgur.com/T0PQ0F6.png)
 
