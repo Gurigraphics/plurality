@@ -1,8 +1,7 @@
-# Plurality - Modular Code Editor
 
 ![alt tag](https://imgur.com/aWTUyRW.png)
 
-Plurality is an opensource **Code Editor** for the next generation.
+Plurality is an opensource **Modular Code Editor** for the next generation.
 
 ---
 
@@ -73,5 +72,16 @@ Test your HTML5 Project without installing or run a server.
 ---
 ## How to install
 
+Install the dependencies
+
+```
+npm install 
+```
+
+
+
+
+## License
+Copyright 2017 Gurigraphics and various contributors. Released under the [MIT License (MIT)](https://github.com/Gurigraphics/plurality/blob/master/LICENSE)
 
 > Plurality: Develop code is develop yourself!
