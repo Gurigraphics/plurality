@@ -4,6 +4,7 @@
 
 Plurality is an out of the box **Code Editor** for the next generation.
 
+---
 
 ## What's new?
 
@@ -19,6 +20,8 @@ Plurality replaces **static hierarchical tree** by **dropable blocks tree**.
 - Best to refactor the project.
 
 > *Ordinary files* are now *Special components*.
+
+---
 
 ### 2- Three new areas to work
 
@@ -39,6 +42,8 @@ Organize the code the way you think.
 - Lightning maintenance.
 - Best for creating complex applications.
 
+---
+
 ### 3- Import and Export code? We can do better with something like **c/c++ pointers**!
 
 Inject the code of a block into any other block with this simple comment: 
@@ -52,6 +57,8 @@ Inject the code of a block into any other block with this simple comment:
 - Do not waste time searching the pieces of the puzzle.
 - Use ``` //>filename.js ``` to inject the code anywhere. 
 
+---
+
 ### 4- One Click Test 
 
 Test your HTML5 Project without installing or run a server.
@@ -62,6 +69,9 @@ Test your HTML5 Project without installing or run a server.
 
 - Do not wait server to start.
 - Use all Google Chrome debugging tools.
+
+---
+## How to install
 
 
 > Plurality: Develop code is develop yourself!
