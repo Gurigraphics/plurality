@@ -13,12 +13,12 @@ Plurality replaces **static hierarchical tree** by **dropable blocks tree**.
 
 ![alt tag](https://imgur.com/FVJjBxq.png)
 
+> *Ordinary files* are now *Special components*.
+
 ### Benefits
 
 - Best to organize the code.
 - Best to refactor the project.
-
-> *Ordinary files* are now *Special components*.
 
 ---
 
@@ -31,6 +31,8 @@ Organize the code the way you think.
 **TRASH**: Delete the *unnecessary*.
 
 ![alt tag](https://imgur.com/T0PQ0F6.png)
+
+> This is like a code assembly line.
 
 
 ### Benefits
