@@ -72,14 +72,19 @@ Test your HTML5 Project without installing or run a server.
 ---
 ## How to install
 
-Install the dependencies
-
+Click in the Lua script **npm install.lua**
+Or use the command prompt:
 ```
 npm install 
 ```
 
+## How to run
 
-
+Click in the Lua script **npm start.lua**
+Or use the command prompt:
+```
+npm start 
+```
 
 ## License
 Copyright 2017 Gurigraphics and various contributors. Released under the [MIT License (MIT)](https://github.com/Gurigraphics/plurality/blob/master/LICENSE)
