@@ -3,6 +3,7 @@
 
 Plurality is an opensource **Modular Code Editor** for the next generation.
 
+[<img src="https://imgur.com/qBLvb2G.png">](https://discord.gg/mamAnf8/)
 ---
 
 ## What's new?
