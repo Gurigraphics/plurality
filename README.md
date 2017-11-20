@@ -1,6 +1,11 @@
 # Plurality - Modular Code Editor
 
-Plurality is an out of the box **HTML5 Code Editor** for the next generation.
+![alt tag](https://imgur.com/Jy4Ps7o.png)
+
+Plurality is an out of the box **Code Editor** for the next generation.
+
+It uses Electrom and CodeMirror to provide a singular coding experience.
+
 
 ## What's new?
 
@@ -33,7 +38,7 @@ Organize the code the way you think.
 
 - Best to modular design think.
 - Best to avoid spaghetti code.
-- Reuse and share code.
+- Best to reuse and share code.
 
 ### 3- Import and Export code? We can do better with something like **c/c++ pointers**!
 
@@ -44,8 +49,8 @@ Inject the code of a block into any other block with this simple comment:
 
 ### Benefits
 
-- Do not waste time searching the pieces of the puzzle.
 - Keep your code modular.
+- Do not waste time searching the pieces of the puzzle.
 - Use ``` //>filename.js ``` to inject the code anywhere. 
 
 ### 4- One Click Test 
