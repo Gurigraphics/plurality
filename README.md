@@ -112,5 +112,3 @@ npm start
 
 ## License
 Copyright 2017 Gurigraphics and various contributors. Released under the [MIT License (MIT)](https://github.com/Gurigraphics/plurality/blob/master/LICENSE)
-
----
