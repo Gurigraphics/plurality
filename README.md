@@ -1,8 +1,8 @@
 # Plurality - Modular Code Editor
 
-![alt tag](https://imgur.com/Jy4Ps7o.png)
+![alt tag](https://imgur.com/Mp5GGY1.png)
 
-Plurality is an out of the box **Code Editor** for the next generation.
+Plurality is an opensource **Code Editor** for the next generation.
 
 ---
 
