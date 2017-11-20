@@ -72,6 +72,14 @@ Test your HTML5 Project without installing or run a server.
 - Use all Google Chrome debugging tools.
 
 ---
+
+## How to download
+
+Use the command prompt:
+```
+git clone git://github.com/Gurigraphics/plurality
+```
+
 ## How to install
 
 Click in the Lua script **npm install.lua**
@@ -88,6 +96,8 @@ Or use the command prompt:
 npm start 
 ```
 
+---
+
 ## Structure of files
 
 ![alt tag](https://imgur.com/6t3WxvO.png)
@@ -98,7 +108,9 @@ npm start
 ![alt tag](https://imgur.com/M4e7vyr.png)
 
 
+---
+
 ## License
 Copyright 2017 Gurigraphics and various contributors. Released under the [MIT License (MIT)](https://github.com/Gurigraphics/plurality/blob/master/LICENSE)
 
-> Plurality: Develop code is develop yourself!
+---
