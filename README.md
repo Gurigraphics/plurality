@@ -4,8 +4,6 @@
 
 Plurality is an out of the box **Code Editor** for the next generation.
 
-> The singular coding experience starts now.
-
 
 ## What's new?
 
